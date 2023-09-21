@@ -10,9 +10,9 @@ public class StreamQuizz {
 
         List<String> sortedResult = names.stream().sorted().toList();
 
-        long count = names.stream().filter(name -> name.startsWith("g")).count();
+        long count = names.stream().filter(name -> name.startsWith("z")).count();
 
-        boolean hasCountryName = names.stream().anyMatch(name -> name.equals("itary"));
+        boolean hasCountryName = names.stream().anyMatch(name -> name.equals("Itary"));
 
         names.stream().map(name -> name.toUpperCase()).collect(Collectors.toList());
         System.out.println(sortedResult);
