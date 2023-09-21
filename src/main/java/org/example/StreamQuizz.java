@@ -12,7 +12,7 @@ public class StreamQuizz {
 
         long count = names.stream().filter(name -> name.startsWith("g")).count();
 
-        boolean hasCountryname = names.stream().anyMatch(name -> name.equals("itary"));
+        boolean hasCountryName = names.stream().anyMatch(name -> name.equals("itary"));
 
         names.stream().map(name -> name.toUpperCase()).collect(Collectors.toList());
         System.out.println(sortedResult);
